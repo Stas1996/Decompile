@@ -44,7 +44,8 @@ public class Activity_Menu extends AppCompatActivity {
     public void makeServerCall() {
         new Thread() {
             public void run() {
-                String data = Activity_Menu.getJSON(Activity_Menu.this.getString(R.string.url));
+                //String data = Activity_Menu.getJSON(Activity_Menu.this.getString(R.string.url));
+                String data = "California,Texas,Florida,New York,Illinois,Pennsylvania,Ohio,Washington,Michigan,Arizona";
                 Log.d("pttt", data);
                 if (data != null) {
                     Activity_Menu activity_Menu = Activity_Menu.this;
